@@ -1,0 +1,37 @@
+.container {
+  font-family: "Merriweather", serif;
+}
+#about-me {
+  text-align: left;
+}
+#paragraph {
+  width: 80%;
+}
+.gradient-background {
+  background: linear-gradient(300deg, #093f91, #948859, #083939);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.items {
+  margin-right: 50px;
+}
+.items h3 {
+  margin-bottom: 10px;
+}
+.py-5 {
+  padding-top: 5rem !important;
+  padding-bottom: 1rem !important;
+}
