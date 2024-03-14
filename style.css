@@ -12,6 +12,11 @@
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
+/* .gradient-background-1{
+  background: linear-gradient(300deg, #093f91, #948859, #35bbbb);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+} */
 
 @keyframes gradient-animation {
   0% {
@@ -34,4 +39,143 @@
 .py-5 {
   padding-top: 5rem !important;
   padding-bottom: 1rem !important;
+}
+.contact-me {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn {
+  background: #094e50;
+
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 200;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1b5d9b;
+
+  text-decoration: none;
+}
+#motiv {
+  font-weight: 700;
+}
+.skills {
+  background-color: antiquewhite;
+}
+.py-5 {
+  /* padding-top: 3rem!important; */
+  padding-bottom: 1rem !important;
+}
+mb-3 {
+  margin-bottom: 1rem !important;
+  justify-content: space-around;
+}
+
+@keyframes itemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.items {
+  animation: itemFadeIn 0.5s ease-out forwards;
+  opacity: 0; /* Start with items invisible */
+}
+
+/* Animation delay for each column */
+.items:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.items:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.items:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.items:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.items:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 10px 20px rgba(9, 9, 9, 0.2); /* Soft shadow for depth */
+  transform: translateY(-5px);
+
+  /* Ensure border-radius is consistent to maintain the rounded corners */
+  border-radius: 20px;
+}
+
+.items h3 {
+  font-size: 1.5rem; /* Adjust the font size */
+  margin-bottom: 1rem; /* Provide more space below the headings */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.items p {
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 0.5rem; /* Adjust spacing between paragraphs */
+}
+
+.items {
+  /* border: solid 4px transparent; */
+  padding: 10px;
+  border-radius: 10px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #9ba713, #083939);
+  border-radius: 20px; /* Apply rounded corners */
+  /* Keep other properties as they are */
+  margin-right: 50px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(8, 6, 6, 0.1);
+}
+
+.interest-icon {
+  display: inline-block;
+  animation: rotateIcon 2s linear infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scroll-text {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-text p {
+  position: absolute;
+  white-space: nowrap;
+  animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
