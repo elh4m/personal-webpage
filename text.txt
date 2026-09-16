@@ -1,0 +1,3 @@
+projects:
+lidar data processing
+3d model generation from 2d files
