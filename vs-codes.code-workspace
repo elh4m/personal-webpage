@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../vs-codes"
+		},
+		{
+			"name": "personal-webpage",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
